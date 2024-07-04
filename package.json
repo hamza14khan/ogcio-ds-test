@@ -7,7 +7,7 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "author": "",
+  "author": "hamza14khan",
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.77.6",
