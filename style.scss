@@ -1,0 +1,211 @@
+@import "@ogcio/ogcio-ds/govie/all";
+
+// Overriding Styling
+body {
+  font-family: "Lato", "Lato-fallback", sans-serif !important;
+  line-height: 27px;
+  margin: 0px;
+  color: #000000 !important;
+  background-color: #fff;
+}
+
+.poc-govie {
+  .govie-superheader__navigation-item {
+    .govie-header__navigation-list {
+      padding: 0;
+      list-style: none;
+      margin: 5px 10px 5px 5px;
+    }
+  }
+
+  .govie-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    img {
+      max-height: 100px;
+    }
+    ul {
+      max-width: 400px;
+      list-style: none;
+      li {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+      }
+      li:not(:first-child) {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .govie-main-plan {
+    display: flex;
+    margin-top: 30px;
+
+    &-image {
+      img {
+        height: 100%;
+        width: 100%;
+        max-width: 990px;
+      }
+    }
+    &-card {
+      background-color: #f6f6f2;
+      padding: 25px;
+    }
+  }
+
+  .govie-plans {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .govie-card {
+      margin-right: 15px;
+      max-width: 310px;
+      img {
+        width: 100%;
+      }
+    }
+    .govie-card:last-child {
+      margin: unset;
+    }
+  }
+
+  .govie-collaborations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    .govie-collaborations--card {
+      margin-right: 15px;
+      max-width: 310px;
+    }
+    .govie-collaborations--card:last-child {
+      margin: unset;
+    }
+
+    .govie-collaborations--card-item {
+      margin-top: 25px;
+    }
+  }
+
+  .govie-regulations {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    .govie-regulations--card {
+      border-top: 2px solid grey;
+    }
+    .govie-regulations--card-item {
+      a {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .govie-ministers {
+    margin-top: 50px;
+    border-top: 2px solid grey;
+    .govie-ministers-cards {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .govie-ministers--profile-card {
+      &__image {
+        display: flex;
+        justify-content: center;
+
+        img {
+          display: block;
+          height: 200px;
+        }
+      }
+      .govie-ministers--profile-card__info {
+        max-width: 250px;
+        padding: 15px;
+        background-color: #f6f6f2;
+        height: 200px;
+      }
+    }
+  }
+
+  .govie-other-ministers {
+    border-top: 2px solid grey;
+    margin-top: 50px;
+
+    .govie-other-ministers-card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      .govie-other-ministers--card {
+        max-width: 310px;
+      }
+    }
+
+    &--card {
+      width: 100%;
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: unset;
+      }
+
+      &-item {
+        margin-bottom: 25px;
+        h4 {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .govie-about-contact-and-corporate {
+    display: flex;
+    justify-content: space-evenly;
+
+    .govie-about-contact {
+      border-top: 2px solid grey;
+      margin-right: 50px;
+
+      &--about {
+        margin-bottom: 50px;
+      }
+
+      &--contact {
+        border-top: 2px solid grey;
+
+        &-card {
+          margin-top: 20px;
+          max-width: 650px;
+
+          h4 {
+            color: $govie-primary-button-background-colour;
+          }
+        }
+      }
+    }
+    .govie-corporate {
+      border-top: 2px solid grey;
+    }
+  }
+
+  .govie-social-media {
+    border-top: 2px solid grey;
+    margin-bottom: 50px;
+    p {
+      a {
+        text-decoration: none;
+        margin-right: 10px;
+      }
+      img {
+        height: 40px;
+      }
+    }
+  }
+}
