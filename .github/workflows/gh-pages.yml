@@ -27,6 +27,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.x"
+          registry-url: "https://registry.npmjs.org"
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
@@ -37,9 +42,11 @@ jobs:
       - name: Build site
         run: |
           npm i
-          npm run dev
+          npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: build
 
   # Deployment job
   deploy:
