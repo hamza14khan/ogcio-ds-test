@@ -212,4 +212,45 @@ body {
       }
     }
   }
+
+  //   Search Result Page
+
+  .search-result-banner {
+    &__title {
+      color: $govie-header-surface-colour;
+    }
+
+    &__input-group {
+      background-color: #e4ded0;
+      padding: 20px 20px 0px 20px;
+    }
+
+    .govie-input {
+      height: 50px;
+    }
+  }
+
+  .search-list-and-filter {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .search-result-text {
+    background-color: #edece5;
+    text-decoration: underline;
+  }
+
+  .search-list {
+    list-style: none;
+    padding: 0;
+
+    &__item {
+      margin-bottom: 20px;
+    }
+  }
+
+  .search-list-pagination {
+    display: flex;
+    justify-content: space-around;
+  }
 }
