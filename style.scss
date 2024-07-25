@@ -227,12 +227,14 @@ body {
 
     .govie-input {
       height: 50px;
+      margin-bottom: 10px;
     }
   }
 
   .search-list-and-filter {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap-reverse;
   }
 
   .search-result-text {
